@@ -1,0 +1,7 @@
+var boton = document.getElementById("botoncito");
+boton.addEventListener("click", function(evento){
+    evento.preventDefault();
+    var usuario = document.getElementById("mostrarNombre");
+    var clave = document.getElementById("mostrarClave");
+    usuario.innerHTML = "El usuario registrado es " + document.getElementById("inputEmail").value;
+    clave.innerHTML = "La clave ingresada es " + document.getElementById("inputPassword").value;
